@@ -38,15 +38,28 @@ export default function OurOffice() {
             Row 2 — Small image + details, bottom-right (~42%)
             ═══════════════════════════════════════════════ */}
 
-        {/* Large image — left-aligned */}
-        <div className="w-full lg:w-[62%] relative aspect-[4/3] overflow-hidden group">
-          <Image
-            src={officeContent.images.main}
-            alt="Bright, sunlit interior of Dr. Maya Reynolds' Santa Monica therapy office — comfortable grey sofa, armchair, exposed brick walls, high ceilings, and sheer curtains filtering natural light"
-            fill
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-            sizes="(max-width: 1024px) 100vw, 62vw"
-          />
+        {/* Large image + supporting copy — side by side */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
+          {/* Image — left */}
+          <div className="lg:col-span-7 relative aspect-[4/3] overflow-hidden group">
+            <Image
+              src={officeContent.images.main}
+              alt="Bright, sunlit interior of Dr. Maya Reynolds' Santa Monica therapy office — comfortable grey sofa, armchair, exposed brick walls, high ceilings, and sheer curtains filtering natural light"
+              fill
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              sizes="(max-width: 1024px) 100vw, 58vw"
+            />
+          </div>
+
+          {/* Copy — right, vertically centered */}
+          <div className="lg:col-span-5 flex flex-col justify-end pb-2">
+            <p className="font-body text-[15px] leading-[1.8] text-[var(--color-text-light)] mb-5">
+              {officeContent.description}
+            </p>
+            <p className="font-body text-[14px] leading-[1.8] text-[var(--color-text-light)]">
+              {officeContent.secondaryDescription}
+            </p>
+          </div>
         </div>
 
         {/* Small image + details block — right-aligned */}
