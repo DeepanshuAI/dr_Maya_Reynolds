@@ -4,6 +4,7 @@ import ValueProposition from "@/components/ValueProposition";
 import WhoWeHelp from "@/components/WhoWeHelp";
 import QuoteBanner from "@/components/QuoteBanner";
 import HowWeWork from "@/components/HowWeWork";
+import OurOffice from "@/components/OurOffice";
 import Honoring from "@/components/Honoring";
 import Expertise from "@/components/Expertise";
 import Specialties from "@/components/Specialties";
@@ -20,6 +21,7 @@ export default function Home() {
         <WhoWeHelp />
         <QuoteBanner />
         <HowWeWork />
+        <OurOffice />
         <Honoring />
         <Expertise />
         <Specialties />
