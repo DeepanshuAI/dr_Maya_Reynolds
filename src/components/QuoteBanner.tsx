@@ -8,19 +8,24 @@ export default function QuoteBanner() {
       {/* Background Image */}
       <Image
         src={images.quoteBanner}
-        alt="Children running joyfully through ocean waves at the beach"
+        alt="Aerial view of calm Pacific ocean waves meeting Santa Monica shore"
         fill
         className="object-cover"
         sizes="100vw"
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[var(--color-text)] opacity-45"></div>
+      <div className="absolute inset-0 bg-[var(--color-text)] opacity-50"></div>
       {/* Quote Text */}
       <div className="relative z-10 px-[8vw] md:px-[12vw] lg:px-[16vw] text-center">
         <blockquote>
           <p className="font-display text-[28px] md:text-[36px] lg:text-[46px] leading-[1.25] text-white italic">
             {quoteBannerContent.quote}
           </p>
+          <footer className="mt-6">
+            <cite className="font-body text-[12px] tracking-[3px] uppercase text-white/80 not-italic">
+              — Dr. Maya Reynolds, PsyD
+            </cite>
+          </footer>
         </blockquote>
       </div>
     </section>

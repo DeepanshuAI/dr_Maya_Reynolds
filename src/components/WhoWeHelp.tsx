@@ -1,40 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
-import { whoWeHelpContent } from "@/data/pageContent";
+import { servicesContent } from "@/data/pageContent";
 import { images } from "@/data/images";
 
 const imageMap: Record<string, string> = {
-  Adults: images.whoWeHelp.adults,
-  Couples: images.whoWeHelp.couples,
-  "Children & Teens": images.whoWeHelp.children,
+  "Anxiety & Panic": images.services.anxiety,
+  "Trauma & EMDR": images.services.trauma,
+  "Burnout & Perfectionism": images.services.burnout,
 };
 
 const altMap: Record<string, string> = {
-  Adults: "Two people walking together along a peaceful beach shoreline",
-  Couples: "Couple holding hands walking on the beach at sunset",
-  "Children & Teens":
-    "Parent and child playing together on a sunny beach",
+  "Anxiety & Panic": "Person sitting peacefully by the ocean at sunset, finding calm",
+  "Trauma & EMDR": "Hands gently holding a smooth stone by the ocean, grounding and healing",
+  "Burnout & Perfectionism":
+    "Professional woman walking barefoot on Santa Monica beach at sunrise",
 };
 
 export default function WhoWeHelp() {
   return (
     <section
       className="section-padding border-editorial"
-      aria-label="Who We Help"
+      aria-label="Services"
     >
       {/* Heading */}
       <div className="mb-12 lg:mb-16">
         <h2 className="font-display text-[42px] md:text-[50px] lg:text-[60px] leading-[1.1] text-[var(--color-text)]">
-          {whoWeHelpContent.heading}{" "}
+          {servicesContent.heading}{" "}
           <span className="text-script-accent text-[48px] md:text-[56px] lg:text-[66px]">
-            {whoWeHelpContent.headingAccent}
+            {servicesContent.headingAccent}
           </span>
         </h2>
       </div>
 
       {/* Three Column Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-        {whoWeHelpContent.items.map((item) => (
+        {servicesContent.items.map((item) => (
           <div key={item.title}>
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden mb-6">

@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { navigation } from "@/data/navigation";
-import { images } from "@/data/images";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,8 +20,8 @@ export default function Header() {
       <div className="header-main flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0 flex flex-col items-center">
-          <span className="font-display text-[26px] leading-none tracking-wide text-[var(--color-text)]">Conejo Valley</span>
-          <span className="font-body text-[8px] tracking-[4px] uppercase text-[var(--color-text-light)] mt-1">FAMILY COUNSELING</span>
+          <span className="font-display text-[24px] leading-none tracking-wide text-[var(--color-text)]">{navigation.logo.line1}</span>
+          <span className="font-body text-[8px] tracking-[4px] uppercase text-[var(--color-text-light)] mt-1">{navigation.logo.line2}</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -1,148 +1,143 @@
+// =============================================
+// Dr. Maya Reynolds, PsyD — Website Content
+// All copy derived from therapist profile
+// SEO optimized for Santa Monica, CA
+// =============================================
+
 export const heroContent = {
-  headline: "Rebuild your foundation on solid ground and finally begin to",
-  headlineAccent: "thrive.",
+  headline: "Find relief from anxiety and reclaim your sense of",
+  headlineAccent: "calm.",
   subheadline:
-    "Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.",
-  cta: { label: "BOOK AN APPOINTMENT", href: "/contact" },
+    "Specialized therapy for adults navigating anxiety, trauma, and burnout in Santa Monica and across California.",
+  cta: { label: "SCHEDULE A CONSULTATION", href: "/contact" },
 };
 
 export const valuePropositionContent = {
   heading:
-    "You\u2019re holding onto hope that life can be better than it is right now.",
+    "You\u2019re accomplished on the outside\u2014but internally, something feels off.",
   col1Subheading:
-    "AT CONEJO VALLEY FAMILY COUNSELING WE WANT TO MAKE THAT HOPE A REALITY.",
+    "DR. MAYA REYNOLDS PROVIDES A GROUNDED, COLLABORATIVE SPACE TO HELP YOU RECONNECT.",
   col1Body:
-    "Whether you\u2019re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life\u2019s ups and downs.",
+    "Many of the people I work with are high-achieving, thoughtful, and self-aware\u2014but internally feel exhausted, stuck in overthinking, or emotionally on edge. If you\u2019re a professional or creative who feels \u201Cfunctional\u201D on the outside while quietly struggling with constant worry, tension in your body, or difficulty sleeping, you\u2019re not alone.",
   col2Body:
-    "First and foremost, we believe what you\u2019re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.",
+    "As a licensed clinical psychologist based in Santa Monica, I offer a warm, collaborative space where your experience is taken seriously. Together, we\u2019ll work to understand both the emotional and physiological sides of what you\u2019re going through\u2014so you can develop insight, resilience, and a stronger relationship with yourself over time. My goal is not just symptom relief, but lasting change.",
 };
 
-export const whoWeHelpContent = {
-  heading: "Who we",
+export const servicesContent = {
+  heading: "How I can",
   headingAccent: "help",
   items: [
     {
-      title: "Adults",
+      title: "Anxiety & Panic",
       description:
-        "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
-      href: "/adults",
+        "Constant worry, tension in your body, difficulty sleeping, or a sense that you\u2019re always bracing for something to go wrong\u2014these experiences are real and exhausting. Through evidence-based methods including CBT and mindfulness-based practices, I help clients in Santa Monica understand and manage anxiety at both the emotional and physiological level.",
+      href: "/anxiety-therapy-santa-monica",
     },
     {
-      title: "Couples",
+      title: "Trauma & EMDR",
       description:
-        "Relationships require effort, and we\u2019re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
-      href: "/couples-therapy",
+        "Whether you\u2019ve experienced a single-incident trauma or more complex, long-standing patterns stemming from childhood, relationships, or chronic stress, healing is possible. I use EMDR and body-oriented techniques with an emphasis on safety, stabilization, and helping you feel more regulated\u2014not just during sessions, but in your daily life.",
+      href: "/trauma-emdr-therapy-santa-monica",
     },
     {
-      title: "Children & Teens",
+      title: "Burnout & Perfectionism",
       description:
-        "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
-      href: "/children-and-teens",
+        "Many entrepreneurs, creatives, and professionals feel disconnected from themselves after years of pushing through stress and high internal pressure. Therapy becomes a space to slow down, reconnect, and develop more sustainable ways of living and working\u2014without losing the drive that makes you who you are.",
+      href: "/burnout-therapy-santa-monica",
     },
   ],
 };
 
 export const quoteBannerContent = {
   quote:
-    "You deserve a place where your story is heard, valued, and understood. Nothing will be too heavy for us to carry together.",
+    "I believe therapy works best when clients feel respected, understood, and actively involved in the process.",
 };
 
-export const expertiseContent = {
-  heading: "Our areas of",
-  headingAccent: "expertise",
-  leftColumn: [
-    { label: "DISSOCIATION", href: "/dissociative-identity-disorder-therapist-newbury-park" },
-    { label: "TRAUMA", href: "/trauma-counseling-newbury-park" },
-    { label: "FAMILY CONFLICT", href: "#" },
-    { label: "SPECIAL NEEDS PARENTING", href: "/counseling-special-needs-parents-newbury-park" },
-    { label: "DEPRESSION", href: "/anxiety-depression" },
-    { label: "MARRIAGE", href: "/couples-therapy" },
-  ],
-  rightColumn: [
-    { label: "ANXIETY", href: "/anxiety-depression" },
-    { label: "RELATIONSHIPS", href: "#" },
-    { label: "CHILDREN", href: "/children-and-teens" },
-    { label: "TEENS", href: "/children-and-teens" },
-    { label: "INTIMACY & CONNECTION", href: "/couples-therapy" },
-    { label: "...AND MORE.", href: "#" },
-  ],
-};
-
-export const howWeWorkContent = {
-  eyebrow: "HOW WE WORK",
-  heading: "We\u2019re here to make a difference.",
+export const howIWorkContent = {
+  eyebrow: "MY APPROACH",
+  heading: "Structured enough to feel supportive, with space for reflection and depth.",
   col1Subheading:
-    "THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE, IT\u2019S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.",
+    "I TAKE A WARM, COLLABORATIVE, AND GROUNDED APPROACH TO THERAPY THAT HONORS BOTH YOUR MIND AND BODY.",
   col1Body:
-    "Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won\u2019t find anything \u201Cone-size-fits-all\u201D here.) If you\u2019re ready to do the work, we\u2019re ready to help.",
-  col1Cta: { label: "LEARN MORE ABOUT US", href: "/therapists-newbury-park" },
+    "Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods such as cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to help you understand both the emotional and physiological sides of what you\u2019re experiencing.",
+  col1Cta: { label: "LEARN MORE ABOUT MY APPROACH", href: "/about" },
   col2Body:
-    "Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you\u2019ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what\u2019s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.",
+    "Trauma work is an important part of my practice. My approach is paced carefully, with an emphasis on safety, stabilization, and helping clients feel more regulated in their daily lives. My goal is not just symptom relief, but helping clients develop insight, resilience, and a stronger relationship with themselves over time. If you\u2019re ready to begin, I\u2019m here to walk alongside you.",
 };
 
 export const honoringContent = {
-  heading: "Honoring where you\u2019ve been",
+  heading: "Understanding where you\u2019ve been",
   headingAccent: "&",
-  headingEnd: "helping shape where you\u2019re headed.",
+  headingEnd: "helping you move forward with clarity.",
 };
 
-export const specialtiesContent = {
-  heading: "Our",
-  headingAccent: "specialties",
-  headingEnd: "include\u2026",
+export const expertiseContent = {
+  heading: "Areas of",
+  headingAccent: "focus",
+  leftColumn: [
+    { label: "ANXIETY", href: "/anxiety-therapy-santa-monica" },
+    { label: "PANIC", href: "/anxiety-therapy-santa-monica" },
+    { label: "TRAUMA", href: "/trauma-emdr-therapy-santa-monica" },
+    { label: "EMDR", href: "/trauma-emdr-therapy-santa-monica" },
+    { label: "BURNOUT", href: "/burnout-therapy-santa-monica" },
+    { label: "PERFECTIONISM", href: "/burnout-therapy-santa-monica" },
+  ],
+  rightColumn: [
+    { label: "STRESS", href: "#" },
+    { label: "OVERTHINKING", href: "#" },
+    { label: "SLEEP DIFFICULTIES", href: "#" },
+    { label: "COMPLEX TRAUMA", href: "/trauma-emdr-therapy-santa-monica" },
+    { label: "RELATIONSHIP PATTERNS", href: "#" },
+    { label: "TELEHEALTH ACROSS CA", href: "/contact" },
+  ],
+};
+
+export const faqContent = {
+  heading: "Frequently asked",
+  headingAccent: "questions",
   items: [
     {
-      title: "Trauma",
-      description:
-        "We don\u2019t always know when and how we\u2019ve experienced trauma. In therapy, we\u2019ll work together to help you process your past, understand what\u2019s causing you to stay \u201Cstuck,\u201D and regain a sense of safety, control, and hope. You don\u2019t have to carry your burdens alone.",
-      cta: { label: "LEARN MORE", href: "/trauma-counseling-newbury-park" },
+      question: "What does a typical therapy session look like?",
+      answer:
+        "Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I take a warm, collaborative, and grounded approach. We\u2019ll work together at a pace that feels right for you\u2014sometimes exploring emotions, sometimes building practical skills, always with your well-being as the priority.",
     },
     {
-      title: "EMDR",
-      description:
-        "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
-      cta: { label: "LEARN MORE", href: "/emdr-therapy-newbury-park" },
+      question: "Do you offer telehealth sessions?",
+      answer:
+        "Yes. I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located anywhere in California. Many of my clients find that virtual sessions fit seamlessly into their busy schedules while still providing meaningful, impactful therapy.",
     },
     {
-      title: "Dissociation",
-      description:
-        "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we\u2019ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
-      cta: {
-        label: "LEARN MORE",
-        href: "/dissociative-identity-disorder-therapist-newbury-park",
-      },
+      question: "What therapy approaches do you use?",
+      answer:
+        "I integrate evidence-based methods including cognitive-behavioral therapy (CBT), EMDR (Eye Movement Desensitization and Reprocessing), mindfulness-based practices, and body-oriented techniques. This allows me to address both the emotional and physiological aspects of anxiety, trauma, and burnout.",
     },
     {
-      title: "Special Needs Parenting",
-      description:
-        "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
-      cta: {
-        label: "LEARN MORE",
-        href: "/counseling-special-needs-parents-newbury-park",
-      },
+      question: "Who do you typically work with?",
+      answer:
+        "I work with adults who are often high-achieving, thoughtful, and self-aware\u2014entrepreneurs, creatives, and professionals who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences. Many come to me feeling \u201Cfunctional\u201D on the outside while quietly struggling internally.",
     },
   ],
 };
 
 export const bottomCtaContent = {
-  eyebrow: "SCHEDULE AN APPOINTMENT",
-  heading: "Find a therapist who is the right fit for",
-  headingAccent: "you.",
-  body: "Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we\u2019re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.",
-  subBody: "Click the button below to schedule an appointment.",
-  cta: { label: "BOOK NOW", href: "/contact" },
+  eyebrow: "BEGIN YOUR JOURNEY",
+  heading: "Ready to feel more like yourself",
+  headingAccent: "again?",
+  body: "If you\u2019re looking for a therapist who combines practical tools with depth-oriented work\u2014and who understands the realities of living and working in a fast-paced environment\u2014I may be a good fit. My Santa Monica office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable environment.",
+  subBody: "Schedule a consultation to see if we\u2019re the right match.",
+  cta: { label: "BOOK A CONSULTATION", href: "/contact" },
 };
 
 export const footerContent = {
   description:
-    "We want to make getting started simple. You\u2019re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA\u2014whatever works best for you.",
-  address: "925 Broadbeck Dr, Suites 200 and 225, Newbury Park, CA 91320",
-  email: "info@conejovalleycounseling.com",
-  phone: "805.242.3120",
+    "I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located anywhere in California\u2014whatever works best for you.",
+  address: "123th Street 45 W, Santa Monica, CA 90401",
+  email: "hello@drmayareynolds.com",
+  phone: "310.555.0192",
   serviceAreas:
-    "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
+    "Serving Santa Monica, West Los Angeles, Venice, Brentwood & all of California via telehealth",
   websiteCredit: {
-    label: "Website by Walker Strategy Co.",
-    href: "https://walkerstrategyco.com",
+    label: "Website by Deepanshu AI",
+    href: "#",
   },
 };

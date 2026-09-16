@@ -1,29 +1,29 @@
-// We are using local images downloaded from the original site
-// to prevent 403 Forbidden / hotlinking errors from Squarespace CDN.
+// Dr. Maya Reynolds — Phase 2 Redesign
+// Santa Monica coastal & therapy office imagery
 
 export const images = {
   hero: {
-    main: "/images/beach_shoreline_1789489886982.jpg",
-    topRight: "/images/hero_family_beach_1789489873227.jpg",
-    bottomRight: "/images/children_beach_1789489944029.jpg",
+    main: "/images/hero_main.jpg",
+    topRight: "/images/hero_office.jpg",
+    bottomRight: "/images/hero_coastal.jpg",
   },
 
-  valueProposition: "/images/beach_panoramic_1789490020294.jpg",
+  valueProposition: "/images/value_prop_panoramic.jpg",
 
-  whoWeHelp: {
-    adults: "/images/adults_beach_1789489903543.jpg",
-    couples: "/images/couples_beach_1789489930654.jpg",
-    children: "/images/children_beach_1789489944029.jpg",
+  services: {
+    anxiety: "/images/service_anxiety.jpg",
+    trauma: "/images/service_trauma.jpg",
+    burnout: "/images/service_burnout.jpg",
   },
 
-  quoteBanner: "/images/beach_panoramic_1789490020294.jpg",
+  quoteBanner: "/images/quote_banner_ocean.jpg",
 
-  howWeWork: "/images/mother_daughter_beach_1789489991933.jpg",
+  howIWork: "/images/therapy_session.jpg",
 
-  honoring: "/images/hero_family_beach_1789489873227.jpg",
+  honoring: "/images/hero_coastal.jpg",
 
   bottomCta: {
-    left: "/images/adults_beach_1789489903543.jpg",
-    right: "/images/couples_beach_1789489930654.jpg",
+    left: "/images/cta_left.jpg",
+    right: "/images/cta_right.jpg",
   },
 };

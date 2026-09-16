@@ -1,12 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   footerNav,
-  footerTeam,
+  footerServices,
   footerLegal,
 } from "@/data/navigation";
 import { footerContent } from "@/data/pageContent";
-import { images } from "@/data/images";
 
 export default function Footer() {
   return (
@@ -17,8 +15,8 @@ export default function Footer() {
           {/* Column 1: Branding */}
           <div>
             <Link href="/" className="inline-flex flex-col mb-6">
-              <span className="font-display text-[26px] leading-none tracking-wide text-[var(--color-text)]">Conejo Valley</span>
-              <span className="font-body text-[8px] tracking-[4px] uppercase text-[var(--color-text-light)] mt-1">FAMILY COUNSELING</span>
+              <span className="font-display text-[24px] leading-none tracking-wide text-[var(--color-text)]">Dr. Maya Reynolds</span>
+              <span className="font-body text-[8px] tracking-[4px] uppercase text-[var(--color-text-light)] mt-1">CLINICAL PSYCHOLOGIST</span>
             </Link>
             <p className="font-body text-[13px] leading-[1.8] text-[var(--color-text-light)]">
               {footerContent.description}
@@ -46,19 +44,19 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Our Team */}
+          {/* Column 3: Services */}
           <div>
             <h4 className="font-body text-[11px] tracking-[2.5px] uppercase text-[var(--color-text)] mb-6">
-              OUR TEAM
+              SERVICES
             </h4>
             <ul className="space-y-2">
-              {footerTeam.map((member) => (
-                <li key={member.name}>
+              {footerServices.map((service) => (
+                <li key={service.label}>
                   <Link
-                    href={member.href}
+                    href={service.href}
                     className="font-body text-[13px] text-[var(--color-text-light)] hover:text-[var(--color-accent)] transition-colors duration-300"
                   >
-                    {member.name}
+                    {service.label}
                   </Link>
                 </li>
               ))}
@@ -121,7 +119,7 @@ export default function Footer() {
             {footerContent.websiteCredit.label}
           </a>
           <p className="text-white/60 text-[11px]">
-            © {new Date().getFullYear()} Conejo Valley Family Counseling
+            © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD
           </p>
         </div>
       </div>

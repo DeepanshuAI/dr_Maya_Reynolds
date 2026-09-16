@@ -7,7 +7,7 @@ export default function BottomCTA() {
   return (
     <section
       className="section-padding border-editorial"
-      aria-label="Schedule an Appointment"
+      aria-label="Schedule a Consultation"
     >
       {/* Eyebrow */}
       <p className="font-body text-[11px] tracking-[3px] uppercase text-[var(--color-text)] mb-12 lg:mb-16 text-center">
@@ -20,7 +20,7 @@ export default function BottomCTA() {
           <div className="relative aspect-[3/4] overflow-hidden">
             <Image
               src={images.bottomCta.left}
-              alt="Peaceful portrait in nature setting"
+              alt="Woman sitting on a rock overlooking the ocean at sunset, moment of calm"
               fill
               className="object-cover"
               sizes="25vw"
@@ -52,7 +52,7 @@ export default function BottomCTA() {
           <div className="relative aspect-[3/4] overflow-hidden">
             <Image
               src={images.bottomCta.right}
-              alt="Thoughtful portrait in natural setting"
+              alt="Cozy reading nook with journal and teal cushion bathed in golden light"
               fill
               className="object-cover"
               sizes="25vw"

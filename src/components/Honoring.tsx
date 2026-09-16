@@ -6,14 +6,14 @@ export default function Honoring() {
   return (
     <section
       className="border-editorial"
-      aria-label="Honoring Your Journey"
+      aria-label="Your Journey"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative min-h-[350px] lg:min-h-[500px] overflow-hidden order-2 lg:order-1">
           <Image
             src={images.honoring}
-            alt="Family walking together through ocean waves at the beach"
+            alt="Santa Monica coastline at sunset with warm golden light"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

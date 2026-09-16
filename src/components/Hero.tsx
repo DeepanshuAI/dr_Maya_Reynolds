@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="row-span-2 relative aspect-[3/4] overflow-hidden">
             <Image
               src={images.hero.main}
-              alt="Serene ocean landscape with sunlight reflecting on calm waters"
+              alt="Serene Santa Monica beach shoreline at golden hour"
               fill
               className="object-cover"
               priority
@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="relative aspect-[4/3] overflow-hidden">
             <Image
               src={images.hero.topRight}
-              alt="Peaceful Conejo Valley landscape with golden hills and blue sky"
+              alt="Calm therapy office with natural light and comfortable seating"
               fill
               className="object-cover"
               priority
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="relative aspect-[4/3] overflow-hidden">
             <Image
               src={images.hero.bottomRight}
-              alt="Calm coastal waters with gentle waves"
+              alt="Santa Monica coastal sunset with palm trees"
               fill
               className="object-cover"
               priority
@@ -47,7 +47,7 @@ export default function Hero() {
         {/* Right: Text Content */}
         <div className="flex flex-col justify-center lg:pl-8">
           <p className="font-body text-[11px] tracking-[3px] uppercase text-[var(--color-text-light)] mb-6">
-            NEWBURY PARK, CALIFORNIA & ONLINE
+            SANTA MONICA, CALIFORNIA & ONLINE
           </p>
           <h1 className="font-display text-[42px] md:text-[52px] lg:text-[62px] leading-[1.1] text-[var(--color-text)] mb-8">
             {heroContent.headline}{" "}

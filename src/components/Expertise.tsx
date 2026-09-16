@@ -5,7 +5,7 @@ export default function Expertise() {
   return (
     <section
       className="section-padding border-editorial"
-      aria-label="Areas of Expertise"
+      aria-label="Areas of Focus"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
         {/* Left: Heading */}

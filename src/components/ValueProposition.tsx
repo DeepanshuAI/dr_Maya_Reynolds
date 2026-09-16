@@ -6,7 +6,7 @@ export default function ValueProposition() {
   return (
     <section
       className="border-editorial"
-      aria-label="Value Proposition"
+      aria-label="About Dr. Maya Reynolds"
     >
       {/* Heading Row */}
       <div className="section-padding pb-0">
@@ -17,7 +17,7 @@ export default function ValueProposition() {
             </h2>
           </div>
           <div className="flex items-end">
-            {/* Removed leaf placeholder to prevent 404s */}
+            {/* Decorative space */}
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function ValueProposition() {
         <div className="relative w-full aspect-[16/7] overflow-hidden">
           <Image
             src={images.valueProposition}
-            alt="Calm ocean waves rolling toward shore with golden sunlight"
+            alt="Panoramic view of Santa Monica coastline at golden hour"
             fill
             className="object-cover"
             sizes="100vw"
