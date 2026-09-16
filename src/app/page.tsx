@@ -21,10 +21,10 @@ export default function Home() {
         <WhoWeHelp />
         <QuoteBanner />
         <HowWeWork />
-        <OurOffice />
         <Honoring />
         <Expertise />
         <Specialties />
+        <OurOffice />
         <BottomCTA />
       </main>
       <Footer />

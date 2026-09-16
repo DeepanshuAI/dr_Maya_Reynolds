@@ -141,3 +141,29 @@ export const footerContent = {
     href: "#",
   },
 };
+
+export const officeContent = {
+  eyebrow: "OUR OFFICE",
+  heading: "A calm place to",
+  headingAccent: "begin.",
+  description:
+    "Therapy is a place to slow down, and the environment matters. My Santa Monica office is a quiet, private space with natural light and a comfortable, uncluttered feel\u2014designed to offer a sense of calm from the moment you arrive.",
+  secondaryDescription:
+    "I offer in-person therapy from my Santa Monica office, as well as secure telehealth sessions for clients located anywhere in California.",
+  inPerson: {
+    label: "IN PERSON",
+    location: "Santa Monica, California",
+    address: "123th Street 45 W",
+    cityState: "Santa Monica, CA 90401",
+  },
+  telehealth: {
+    label: "TELEHEALTH",
+    detail: "Secure online sessions",
+    availability: "for clients located in California",
+  },
+  cta: { label: "BEGIN THERAPY", href: "/contact" },
+  images: {
+    main: "/dr_maya_reynolds/office1.jpeg",
+    secondary: "/dr_maya_reynolds/office2.jpeg",
+  },
+};

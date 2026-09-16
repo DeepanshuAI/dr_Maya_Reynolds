@@ -1,154 +1,137 @@
 import Image from "next/image";
 import Link from "next/link";
+import { officeContent } from "@/data/pageContent";
 
 export default function OurOffice() {
   return (
     <section
-      className="border-editorial"
-      aria-label="Our Office in Santa Monica"
+      aria-labelledby="office-heading"
+      className="bg-[var(--color-surface)] border-editorial"
     >
-      {/* Top Row: Heading + Copy */}
-      <div className="section-padding pb-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          {/* Left: Heading */}
-          <div>
+      <div className="section-padding">
+        {/* ── Desktop: two-column editorial layout ── */}
+        {/* ── Mobile: text → images → details → CTA ── */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+          {/* ═══════════════════════════════════════════
+              LEFT: Images (≈58% on desktop)
+              On mobile: appears AFTER heading/copy
+              ═══════════════════════════════════════════ */}
+          <div className="lg:col-span-7 order-2 lg:order-1 space-y-4">
+            {/* Main office image — wide landscape */}
+            <div className="relative aspect-[4/3] overflow-hidden group">
+              <Image
+                src={officeContent.images.main}
+                alt="Bright, sunlit interior of Dr. Maya Reynolds' Santa Monica therapy office with a comfortable grey sofa, armchair, exposed brick walls, high ceilings, and sheer curtains filtering natural light"
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) 100vw, 58vw"
+              />
+            </div>
+
+            {/* Secondary office image — wider crop for variety */}
+            <div className="relative aspect-[16/9] overflow-hidden group">
+              <Image
+                src={officeContent.images.secondary}
+                alt="Another view of the therapy space showing a cozy seating arrangement with leather chair, grey sofa, bookshelves with curated reading, indoor olive tree, and a calming ocean print on the wall"
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) 100vw, 58vw"
+              />
+            </div>
+          </div>
+
+          {/* ═══════════════════════════════════════════
+              RIGHT: Content (≈42% on desktop)
+              On mobile: heading/copy appear FIRST
+              ═══════════════════════════════════════════ */}
+          <div className="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-center lg:pl-4">
+            {/* Eyebrow */}
             <p className="font-body text-[11px] tracking-[3px] uppercase text-[var(--color-text-light)] mb-5">
-              IN-PERSON &amp; TELEHEALTH
+              {officeContent.eyebrow}
             </p>
-            <h2 className="font-display text-[42px] md:text-[50px] lg:text-[60px] leading-[1.1] text-[var(--color-text)]">
-              A calm space for{" "}
-              <span className="text-script-accent text-[48px] md:text-[56px] lg:text-[66px]">
-                healing
+
+            {/* Heading */}
+            <h2
+              id="office-heading"
+              className="font-display text-[36px] md:text-[44px] lg:text-[52px] leading-[1.1] text-[var(--color-text)] mb-8"
+            >
+              {officeContent.heading}{" "}
+              <span className="text-script-accent text-[42px] md:text-[50px] lg:text-[58px]">
+                {officeContent.headingAccent}
               </span>
             </h2>
-          </div>
 
-          {/* Right: Copy */}
-          <div className="flex items-end pb-2">
-            <p className="font-body text-[15px] leading-[1.8] text-[var(--color-text-light)] max-w-[480px]">
-              My Santa Monica office is a quiet, private space designed to feel
-              calm and grounding. With natural light, exposed brick, comfortable
-              seating, and a warm aesthetic, it's a place where you can slow
-              down, breathe, and focus on yourself. I also offer secure
-              telehealth sessions for clients located anywhere in California—whatever
-              works best for you.
+            {/* Primary copy */}
+            <p className="font-body text-[15px] leading-[1.8] text-[var(--color-text-light)] mb-5">
+              {officeContent.description}
             </p>
-          </div>
-        </div>
-      </div>
 
-      {/* Image Gallery */}
-      <div className="section-padding pt-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          {/* Large office image — seating area with sofa and armchair */}
-          <div className="md:col-span-7 relative aspect-[4/3] overflow-hidden">
-            <Image
-              src="/dr_maya_reynolds/office1.jpeg"
-              alt="Dr. Maya Reynolds' therapy office — a sunlit room with a comfortable grey sofa, armchair, exposed brick walls, high ceilings, and sheer curtains"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 58vw"
-            />
-          </div>
+            {/* Secondary copy */}
+            <p className="font-body text-[15px] leading-[1.8] text-[var(--color-text-light)] mb-10">
+              {officeContent.secondaryDescription}
+            </p>
 
-          {/* Right column: office view 2 + therapist portrait */}
-          <div className="md:col-span-5 grid grid-rows-2 gap-4">
-            {/* Second office view — sofa, bookshelf, ocean art */}
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <Image
-                src="/dr_maya_reynolds/office2.jpeg"
-                alt="Alternative view of the therapy space — a cozy seating arrangement with bookshelves, indoor plant, and an ocean print on the wall"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 42vw"
-              />
-            </div>
-
-            {/* Therapist portrait */}
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <Image
-                src="/dr_maya_reynolds/Dr. Maya Reynolds.png"
-                alt="Dr. Maya Reynolds, PsyD — Licensed Clinical Psychologist in Santa Monica, California"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 42vw"
-              />
+            {/* ── Desktop-only: location details + CTA ── */}
+            <div className="hidden lg:block">
+              <OfficeDetails />
             </div>
           </div>
         </div>
 
-        {/* Detail Pills */}
-        <div className="flex flex-wrap gap-4 mt-10">
-          <span className="inline-flex items-center gap-2 px-5 py-3 border border-[var(--color-border)] rounded-full font-body text-[11px] tracking-[2px] uppercase text-[var(--color-text-light)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Santa Monica, CA
-          </span>
-          <span className="inline-flex items-center gap-2 px-5 py-3 border border-[var(--color-border)] rounded-full font-body text-[11px] tracking-[2px] uppercase text-[var(--color-text-light)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
-            Telehealth across California
-          </span>
-          <span className="inline-flex items-center gap-2 px-5 py-3 border border-[var(--color-border)] rounded-full font-body text-[11px] tracking-[2px] uppercase text-[var(--color-text-light)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            Private &amp; confidential
-          </span>
-          <span className="inline-flex items-center gap-2 px-5 py-3 border border-[var(--color-border)] rounded-full font-body text-[11px] tracking-[2px] uppercase text-[var(--color-text-light)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            Flexible scheduling
-          </span>
+        {/* ── Mobile-only: location details + CTA (after images) ── */}
+        <div className="lg:hidden mt-10">
+          <OfficeDetails />
         </div>
       </div>
     </section>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   Extracted sub-component for location details
+   Rendered in two places (desktop / mobile)
+   but only one is visible at a time via CSS
+   ───────────────────────────────────────────── */
+function OfficeDetails() {
+  return (
+    <>
+      {/* Location detail block */}
+      <div className="grid grid-cols-2 gap-8 mb-10 border-t border-[var(--color-border)] pt-8">
+        {/* In-person */}
+        <div>
+          <p className="font-body text-[10px] tracking-[2.5px] uppercase text-[var(--color-accent-warm)] mb-3">
+            {officeContent.inPerson.label}
+          </p>
+          <p className="font-body text-[14px] leading-[1.6] text-[var(--color-text)] mb-1">
+            {officeContent.inPerson.location}
+          </p>
+          <p className="font-body text-[13px] leading-[1.6] text-[var(--color-text-light)]">
+            {officeContent.inPerson.address}
+          </p>
+          <p className="font-body text-[13px] leading-[1.6] text-[var(--color-text-light)]">
+            {officeContent.inPerson.cityState}
+          </p>
+        </div>
+
+        {/* Telehealth */}
+        <div>
+          <p className="font-body text-[10px] tracking-[2.5px] uppercase text-[var(--color-accent-warm)] mb-3">
+            {officeContent.telehealth.label}
+          </p>
+          <p className="font-body text-[14px] leading-[1.6] text-[var(--color-text)]">
+            {officeContent.telehealth.detail}
+          </p>
+          <p className="font-body text-[13px] leading-[1.6] text-[var(--color-text-light)]">
+            {officeContent.telehealth.availability}
+          </p>
+        </div>
+      </div>
+
+      {/* Subtle CTA */}
+      <Link href={officeContent.cta.href} className="link-underline">
+        {officeContent.cta.label}
+      </Link>
+    </>
   );
 }
