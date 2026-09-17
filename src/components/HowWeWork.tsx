@@ -50,15 +50,24 @@ export default function HowWeWork() {
           </div>
         </div>
 
-        {/* Right: Tall Image */}
-        <div className="relative min-h-[400px] lg:min-h-full overflow-hidden">
+        {/* Right: Portrait Image */}
+        <div className="relative min-h-[500px] lg:min-h-full overflow-hidden">
           <Image
             src={images.howIWork}
-            alt="Warm therapy room with two comfortable chairs, natural light, and calming decor"
+            alt="Dr. Maya Reynolds, PsyD, Licensed Clinical Psychologist"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
+          {/* Identity Overlay */}
+          <div className="absolute bottom-0 left-0 bg-[var(--color-background)] p-6 lg:p-8 md:pr-12 border-t border-r border-[var(--color-border)]">
+            <p className="font-display text-[22px] md:text-[26px] text-[var(--color-text)] mb-1">
+              Dr. Maya Reynolds, PsyD
+            </p>
+            <p className="font-body text-[11px] tracking-[2px] uppercase text-[var(--color-text-light)]">
+              Licensed Clinical Psychologist
+            </p>
+          </div>
         </div>
       </div>
     </section>

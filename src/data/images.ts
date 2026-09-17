@@ -18,7 +18,7 @@ export const images = {
 
   quoteBanner: "/images/quote_banner_ocean.jpg",
 
-  howIWork: "/images/therapy_session.jpg",
+  howIWork: "/dr_maya_reynolds/Dr. Maya Reynolds.png",
 
   honoring: "/images/hero_coastal.jpg",
 
